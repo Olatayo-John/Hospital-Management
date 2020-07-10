@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ADMIN LOGIN</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/Home.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+		<div class="navbar-brand">
+			<img src="image/moose.jpg" width="130px"><h1 class="navbar-brand logo">Hospital Website</h1>
+		</div>
+		<button class="navbar-toggler" data-target="#coll" data-toggle="collapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse" id="coll">
+			<ul class="navbar-nav nav-pills nav-tabs ml-auto">
+			<li class="nav-item">
+					<a href="Index.html" class="nav-link active">Admin</a>
+				</li>
+			<li class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Patient</a>
+				<div class="dropdown-menu">
+					<a href="PatientLogin.html" class="dropdown-item">Patient Login</a>
+					<a href="PatientRegistration.html" class="dropdown-item">Patient Registration</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a href="Gallery.html" class="nav-link">Gallery</a>
+			</li>
+			<li class="nav-item">
+				<a href="ContactUs.html" class="nav-link">Contact Us</a>
+			</li>
+			<li class="nav-item">
+				<a href="AboutProject.html" class="nav-link">About Project</a>
+			</li>
+		</ul>
+		</div>
+	</nav><br>
+
+	<div class="container col-md-7 col-lg-5">
+		<form action="AdminPage.html" method="post">
+			<h3 class="text-danger text-center">ADMIN LOGIN</h3><br>
+			<div class="form-group">
+				<label for="uname">Identification Number(ID):</label>
+				<input type="number" name="uname" id="uname" placeholder="Your UserID" class="form-control" required>
+			</div>
+			
+			<div class="form-group">
+				<label for="pwd">Password:</label>
+				<input type="password" name="pwd" id="pwd" placeholder="Your Password" class="form-control mb-4" required>
+			</div>
+
+			<div class="form-group form-check mb-3">
+				<label class="form-check-label">
+					<input type="checkbox" class="form-check-input">
+					Remember me
+				</label>
+			</div>
+
+			<button class="btn btn-block btn-danger" type="submit" style="font-weight: bolder;padding: 10px;border-radius: 0px;margin-top: 30px;">Log In</button><br>
+
+			<div class="forgot mb-3" style="text-align: center;">
+				<a href="ForgotPassword.html" style="text-decoration: none;">Forgot Password?</a>
+			</div>
+		</form>
+	</div><br>
+
+	<div class="card-columns container-fluid">
+		<div class="card" style="background-color: #34495e;font-weight: bolder;">
+			<div class="card-body">
+				<p class="card-text text-center" style="color: #fff;">There is no excuse for delivering poor care</p>
+			</div>
+		</div>
+	</div><br><br><br>
+
+	<footer class="footer" style="width: 100%;">
+		<div class="contact">Hospitalwebsite@gmail.org(+91 123 45 67 890/+91 098 76 54 321)</div>
+		Copyright &copy; 2019 Hospitalwebsite.ac.in.
+	</footer>
+
+</body>
+</html>
