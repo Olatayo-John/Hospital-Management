@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body{
+	background-image: url('../image/PR.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+h1.logo{
+	font-weight: bolder;
+	font-size: 25px;
+}
+.navbar ul{
+
+}
+.navbar ul li{
+	border-right: 0px solid #8BC34A;
+	max-width: 100%;
+	margin: 0px 20px;
+}
+.navbar ul li a{
+	text-decoration: none;
+	text-align: center;
+}
+.navbar ul li a:hover{
+	transition: 0.5s;
+}
+
+h3{
+	text-align: center;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+h6{
+	color: #34495e;
+	text-align: center;
+}
+label{
+	font-weight: bold;
+	color: #E57373;
+	font-size: 16px
+}
+span label{
+	font-weight: normal;
+	color: #000;
+	font-size: 17px;
+}
+.submit{
+	text-align: center;
+	font-size: px;
+}
+.submit button{
+	width: 25%;
+	border-radius: 0px;
+	padding: 10px;
+}
+.already{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 18px;
+	font-weight: bolder;
+}
+.footer{
+	background-color: white;
+	color: green;
+	font-family: sans-serif;
+	padding: 5px;
+	text-align: center;
+	margin: 0px 0px;
+}
+.footer div{
+	font-family: sans-serif;
+}
