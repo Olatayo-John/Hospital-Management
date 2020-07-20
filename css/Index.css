@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body{
+	background-image: url('../image/Admin.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+h1.logo{
+	font-weight: bolder;
+	font-size: 25px;
+}
+h3{
+	color: ;
+}
+.navbar ul{
+
+}
+.navbar ul li{
+	border-right: 0px solid #8BC34A;
+	max-width: 100%;
+	margin: 0px 20px;
+}
+.navbar ul li a{
+	text-decoration: none;
+	text-align: center;
+}
+.navbar ul li a:hover{
+	transition: 0.5s;
+}
+label{
+	color: #000;
+	font-weight: bolder;
+	font-size: 17px;
+}
+.forgot a{
+	color: #000;
+	font-weight: ;
+	font-size: 18px;
+}
+.forgot a:hover{
+	font-weight: bold;
+	color: #000;
+}
+.footer{
+	background-color: white;
+	color: green;
+	font-family: sans-serif;
+	padding: 5px;
+	text-align: center;
+	margin: 0px 0px;
+}
+.footer div{
+	font-family: sans-serif;
+}
+div.error{
+	color: #F44336;
+	font-weight: bolder;
+}
