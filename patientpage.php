@@ -2,7 +2,7 @@
 	session_start();
 
 	if (!isset($_SESSION["id"])) {
-		header("Location: Homepage.html");
+		header("Location: patientlogin.html");
 		exit();
 	}
 ?>
@@ -12,7 +12,7 @@
 	<title>Admin</title>
 		<meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" type="text/css" href="css/adminpage.css">
+	  <link rel="stylesheet" type="text/css" href="css/PatientLogin.css">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -32,13 +32,7 @@
 				<li class="nav-item">
 					<a href="logout.php" class="nav-link" style="color: #F44336;font-weight: bold;">Log out</a>
 				</li>
-				<li class="nav-item dropdown">
-					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Patient</a>
-					<div class="dropdown-menu">
-						<a href="patientlogin.html" class="dropdown-item">Patient Login</a>
-						<a href="patientreg.html" class="dropdown-item">Patient Registration</a>
-					</div>
-				</li>
+				
 				<li class="nav-item">
 					<a href="gallery.html" class="nav-link">Gallery</a>
 				</li>
@@ -52,15 +46,8 @@
 		</div>
 	</nav><br>
 
-	<div class="container jumbotron">
-		<h4 class="text-center"><?php echo "Welcome Dr. " .$_SESSION['fname'] ." " .$_SESSION["lname"];?></h4>
-	</div>
-
-	<div class="container patients">
-		<h4>PATIENTS</h4>
-		<div>
-			<?php ?>
-		</div>
+	<div class="container jumbotron text-center">
+		<h4><?php echo "Welcome ".$_SESSION["fname"] ." " .$_SESSION['lname'];?></h4>
 
 	</div>
 </body>

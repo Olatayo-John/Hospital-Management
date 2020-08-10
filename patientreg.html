@@ -22,7 +22,7 @@
 		<div class="navbar-collapse collapse" id="coll">
 			<ul class="navbar-nav nav-pills nav-tabs ml-auto">
 				<li class="nav-item">
-					<a href="homepage.html" class="nav-link">Admin</a>
+					<a href="index.html" class="nav-link">Home</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Patient</a>
@@ -45,13 +45,13 @@
 	</nav><br>
 
 <div class="container">
-	<h3 class="text-info">Patient Registration Form</h3>
+	<h3 class="text-danger">Patient Registration Form</h3>
 	<h6>(Please fill in your details correctly)</h6>
 
 	<form action="#" method="post">
 		<div class="form-group">
 			<label for="name">Patient's Name:</label>
-			<div class="input-group mb-1">
+		<div class="input-group mb-1">
 			<input type="text" name="fname" id="fname" placeholder="First Name" class="form-control" required>
 			<input type="text" name="mname" id="mname" placeholder="Middle Name" class="form-control" required>
 		</div>
@@ -60,17 +60,16 @@
 
 		<div class="form-group">
 			<label for="add">Address:</label>
-			<input type="text" name="add1" id="add1" placeholder="Street Address" class="form-control mb-1" required>
-			<input type="text" name="add2" id="add2" name="add" id="add" placeholder="Address Line 2" class="form-control mb-1" required>
+			<input type="text" name="add1" id="add1" placeholder="Address Line" class="form-control mb-1" required>
 			<input type="text" name="city" id="city" placeholder="City" class="form-control mb-1" required>
-			<input type="text" name="state" id="state" placeholder="State/Region" class="form-control" required>
+			<div class="input-group mb-1">
+				<input type="text" name="state" id="state" placeholder="State/Region" class="form-control" required>
+				<input type="number" name="postalc" id="pstalc" placeholder="Postal code" class="form-control" required>
+			</div>
 		</div>
 
 		<label for="tel">Mobile:</label>
-		<div class="input-group mb-2">
-			<input type="tel" name="tel1" id="tel1" placeholder="Mobile 1" class="form-control" required value="+91">
-			<input type="tel" name="tel2" id="tel2" placeholder="Mobile 2" class="form-control">
-		</div>
+			<input type="number" name="tel1" id="tel1" placeholder="Mobile" class="form-control mb-2" required>
 
 		<label for="email">E-mail</label>
 		<div class="input-group mb-2">
@@ -79,17 +78,17 @@
 		</div>
 
 		<label for="ssn">Aadhar Card Number:</label>
-		<input type="text" name="ssn" id="ssn" placeholder="xxxx-xxxx-xxxx-xxxx" class="form-control mb-2">
+		<input type="text" name="ssn" id="ssn" placeholder="1234-xxxx-xxxx-xxxx" class="form-control mb-2">
 
 		<div>
 			<label>Gender:</label><br>
 			<span class="col-lg-12">
 				<label for="male">Male</label>
-				<input type="radio" name="gender" id="male" required>
+				<input type="radio" name="gender" value="male" id="male" required>
 			</span>
 			<span class="col-lg-12">
 				<label for="female">Female</label>
-				<input type="radio" name="gender" id="female" required>
+				<input type="radio" name="gender" value="female" id="female" required>
 			</span>
 		</div>
 
@@ -97,63 +96,48 @@
 			<label>Marital Status:</label><br>
 			<span class="col-lg-12">
 				<label for="single">Single</label>
-				<input type="radio" name="mstatus" id="single" required>
+				<input type="radio" name="mstatus" value="single" id="single" required>
 			</span>
 			<span class="col-lg-12">
 				<label for="married">Married</label>
-				<input type="radio" name="mstatus" id="married" required>
+				<input type="radio" name="mstatus" value="married" id="married" required>
 			</span>
 		</div>
-	
-		<label for="age">Age:</label>
-		<input type="number" name="age" placeholder="Your Age" class="form-control mb-2" min="18" max="80" required>
 
-		<label for="occ">Occupation:</label>
-		<input type="text" name="occ" id="occ" placeholder="Occupation" class="form-control mb-2">
+		<label for="bloodty">Blood type:</label>
+		<input type="text" name="bloodty" id="bloodty" placeholder="Blood Type" class="form-control mb-2">
 
-		<label for="religion">Religion:</label>
-		<input type="text" name="religion" id="religion" placeholder="Religion" class="form-control mb-2">
+		<div>
+			<label for="prb">State your current problem:</label>
+			<textarea class="form-control mb-4" rows="5" required></textarea>
+		</div>
 
-		<h3 class="text-info">In case of an Emergency</h3>
+		<div>
+			<label for="prevconditions">Please list all medical conditions you have ever had:</label>
+			<textarea class="form-control mb-2" rows="5" required></textarea>
+		</div>
+
+		<h3 class="text-danger mt-5">In case of an Emergency</h3>
 		<h6>(The following person should be notified)</h6>
 
-		<label for="ename">Name:</label>
+		<label for="ename">Emergency contact name:</label>
 		<input type="text" name="ename" id="ename" placeholder="Name" class="form-control mb-2" required>
 
 		<label for="rel">Relationship:</label>
 		<input type="text" name="erel" id="erel" placeholder="Relationship with you" class="form-control mb-2" required>
 
-		<label for="phn">Mobile:</label>
-		<input type="tel" name="etel" id="etel" value="+91" class="form-control mb-2" required><br><br><br>
-	
-		<div>
-			<label for="smoke">Do you smoke?</label>
-			<select id="smoke" class="custom-select mb-2" required>
-				<option selected>No</option>
-				<option>Yes</option>
-			</select>
-		</div>
+		<label for="phn">Emergency contact mobile:</label>
+		<input type="number" name="etel" id="etel" class="form-control mb-2" required>
+		
+		<label for="pwd">Pick a password:</label>
+		<input type="password" name="pwd" id="pwd" class="form-control mb-2" required>
 
-		<div>
-			<label for="drink">Do you drink alcohol?</label>
-			<select id="drink" class="custom-select mb-2" required>
-				<option selected>No</option>
-				<option>Yes</option>
-			</select>
-		</div>
+		<label for="rpwd">Re-type password:</label>
+		<input type="password" name="rpwd" id="rpwd" class="form-control mb-2" required><br><br><br>
 
-		<div>
-			<label for="prevconditions">Please list all medical conditions you have ever had</label>
-			<textarea class="form-control mb-2" rows="5" required></textarea>
-		</div>
-
-		<div>
-			<label for="prb">State your current problem</label>
-			<textarea class="form-control mb-4" rows="5" required></textarea>
-		</div>
 
 		<div class="submit">
-			<button class="btn btn-info">Register</button>
+			<button class="btn btn-success">Register</button>
 			<button class="btn btn-danger" type="reset">Reset</button>
 		</div>
 	</form>
@@ -163,10 +147,11 @@
 	Already Registered? <a href="PatientLogin.html" style="text-decoration: none;">Login Here</a>
 </div><br><br><br>
 
-<footer class="footer" style="width: 100%;">
-		<div class="contact">Hospitalwebsite@gmail.org(+91 123 45 67 890/+91 098 76 54 321)</div>
-		Copyright &copy; 2019 Hospitalwebsite.ac.in.
-</footer>
+<footer class="copyright">
+		Hospitalwebsite.ac.in.<br>
+		(+91 123 45 67 890/+91 098 76 54 321)<br>
+		&copy; 2020 JVweed Designs:
+	</footer>
 
 </body>
 </html>

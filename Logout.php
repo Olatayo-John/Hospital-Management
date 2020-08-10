@@ -1,9 +1,10 @@
 <?php
 	session_start();
 
-	if (isset($_SESSION["idnum"])) {
+	if (isset($_SESSION["fname"])) {
+		session_unset();
 		session_destroy();
-		header("Location: Homepage.html");
+		header("Location: index.html");
 		exit();
 	}
 ?>
