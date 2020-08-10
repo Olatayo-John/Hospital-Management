@@ -27,4 +27,5 @@ h1.logo{
 }
 .navbar ul li a:hover{
 	transition: 0.5s;
+	background-color: #D32F2F;
 }

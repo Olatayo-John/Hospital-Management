@@ -2,10 +2,9 @@
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	text-decoration: none;
 }
 body{
-	background-image: url('../image/AP.jpg');
+	background-image: url('../image/Admin.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -13,6 +12,9 @@ body{
 h1.logo{
 	font-weight: bolder;
 	font-size: 25px;
+}
+h3{
+	color: ;
 }
 .navbar ul{
 
@@ -30,12 +32,27 @@ h1.logo{
 	transition: 0.5s;
 	background-color: #D32F2F;
 }
-h3{
-	text-align: center;
+label{
+	color: #000;
 	font-weight: bolder;
+	font-size: 17px;
 }
-h5.text-danger{
-	font-weight: bolder;
+.forgot a{
+	color: #000;
+	font-weight: ;
+	font-size: 18px;
+}
+.forgot a:hover{
+	font-weight: bold;
+	color: #000;
+}
+.footer{
+	background-color: white;
+	color: green;
+	font-family: sans-serif;
+	padding: 5px;
+	text-align: center;
+	margin: 0px 0px;
 }
 footer.copyright{
 	background-color: white;
@@ -45,4 +62,8 @@ footer.copyright{
 	margin: 0px 0px;
 	font-weight: bold;
 	font-family: sans-serif;
-}}
+}
+div.error{
+	color: #F44336;
+	font-weight: bolder;
+}

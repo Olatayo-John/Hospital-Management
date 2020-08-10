@@ -27,6 +27,7 @@ h1.logo{
 }
 .navbar ul li a:hover{
 	transition: 0.5s;
+	background-color: #D32F2F;
 }
 
 h3{
@@ -39,14 +40,10 @@ h6{
 	text-align: center;
 }
 label{
-	font-weight: bold;
-	color: #E57373;
-	font-size: 16px
+	font-weight: bolder;
 }
 span label{
 	font-weight: normal;
-	color: #000;
-	font-size: 17px;
 }
 .submit{
 	text-align: center;
@@ -63,14 +60,12 @@ span label{
 	font-size: 18px;
 	font-weight: bolder;
 }
-.footer{
+footer.copyright{
 	background-color: white;
-	color: green;
 	font-family: sans-serif;
 	padding: 5px;
 	text-align: center;
 	margin: 0px 0px;
-}
-.footer div{
+	font-weight: bold;
 	font-family: sans-serif;
 }

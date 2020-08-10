@@ -27,6 +27,7 @@ h1.logo{
 }
 .navbar ul li a:hover{
 	transition: 0.5s;
+	background-color: #D32F2F;
 }
 label{
 	color: #000;
@@ -42,14 +43,12 @@ label{
 	font-weight: bold;
 	color: #000;
 }
-.footer{
+footer.copyright{
 	background-color: white;
-	color: green;
 	font-family: sans-serif;
 	padding: 5px;
 	text-align: center;
 	margin: 0px 0px;
-}
-.footer div{
+	font-weight: bold;
 	font-family: sans-serif;
 }
